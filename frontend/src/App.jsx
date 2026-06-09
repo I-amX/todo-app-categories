@@ -12,7 +12,8 @@ function App() {
   const [apiStatus, setApiStatus] = useState(null);
   const [showApiAlert, setShowApiAlert] = useState(false);
 
-  // Check backend API status (optional - doesn't affect core functionality)
+  console.log('API URL being used:', import.meta.env.VITE_API_URL);
+
   useEffect(() => {
     const checkBackend = async () => {
       const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
