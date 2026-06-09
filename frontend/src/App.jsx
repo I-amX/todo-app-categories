@@ -12,13 +12,13 @@ function App() {
   const [apiStatus, setApiStatus] = useState(null);
   const [showApiAlert, setShowApiAlert] = useState(false);
 
-  console.log('API URL being used:', import.meta.env.VITE_API_URL);
+  // console.log('API URL being used:', import.meta.env.VITE_API_URL);
 
   useEffect(() => {
     const checkBackend = async () => {
-      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+      const apiUrl = '';  
       try {
-        const response = await fetch(`${apiUrl}/api/health`);
+        const response = await fetch(`/api/health`);  
         if (response.ok) {
           const data = await response.json();
           setApiStatus({ connected: true, message: data.message });
@@ -32,7 +32,6 @@ function App() {
     
     checkBackend();
     
-    // Show API alert briefly if backend is not configured
     const timer = setTimeout(() => setShowApiAlert(true), 2000);
     return () => clearTimeout(timer);
   }, []);
