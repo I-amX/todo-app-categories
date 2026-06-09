@@ -38,5 +38,5 @@ A modern, full-stack todo application built with React and Flask, featuring cate
 ### Clone & Setup
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/todo-app-categories.git
+git clone https://github.com/I-amX/todo-app-categories.git
 cd todo-app-categories
