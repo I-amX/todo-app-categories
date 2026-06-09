@@ -10,7 +10,7 @@ CORS(app, resources={
     r"/api/*": {
         "origins": [
             "http://localhost:5173",  # Vite dev server
-            "https://your-frontend.vercel.app"  # Replace after deployment
+            "https://todo-app-three-rosy-35.vercel.app/"  # Replace after deployment
         ]
     }
 })
