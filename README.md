@@ -3,7 +3,7 @@
 A modern, full-stack todo application built with React and Flask, featuring category management (Work/Personal), CRUD operations, and localStorage persistence. Perfect for demonstrating full-stack development skills to freelance clients.
 
 ## 🚀 Live Demo
-- Frontend: [Your Vercel URL]
+- Frontend: [https://todo-app-three-rosy-35.vercel.app/]
 - Backend API: [https://todo-api-tac9.onrender.com]
 
 ## ✨ Features
